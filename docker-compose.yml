@@ -23,7 +23,7 @@ services:
       - microservices-net
     environment:
       SPRING_PROFILES_ACTIVE: docker
-      PRODUCT_SERVICE_URL: http://product-service:8080
+      product.service.url: http://product-service:8080
     depends_on:
       product-service:
         condition: service_healthy
